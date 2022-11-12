@@ -1,0 +1,76 @@
+*{
+    padding: 10px;
+    margin: 0;
+}
+
+body{
+	background-color: rgb(20, 0, 62);  
+}
+.container-cad{
+    width: 420px;
+    height: 600px;
+	margin: 0 auto;
+	display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+	background-color: rgb(49, 47, 105);  
+}
+
+.container-cad h1{
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.forms input{
+    margin-bottom: 8px;
+    border-radius: 3px;
+    border: none;
+}
+
+.fomrs:focus{
+    color: aqua;
+}
+
+input:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.btn-cadastrar{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.btn-cadastrar .btn-cad,
+.btn-cadastrar .btn-clear{
+    background-color:rgb(31, 124, 0);
+    color:#ccc;
+    border: none;
+    border-radius: 3px;
+    width: 120px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.btn-cadastrar .btn-clear{
+    background-color: rgb(141, 0, 0);
+}
+
+.btn-cadastrar .btn-cad:hover{
+    background-color:rgb(92, 135, 78);
+}
+
+.btn-cadastrar .btn-clear:hover{
+    background-color: rgb(134, 78, 78);
+}
+
+
