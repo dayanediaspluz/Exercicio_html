@@ -5,23 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>Cadastro de Usuarios</title>
 </head>
 <body>
-    <div class="container-cad">
-        <h1>Cadastro de Usuarios</h1>
-            <form class="forms">
-                <input type="text" placeholder="Nome">
-                <input type="text" placeholder="Sobrenome">
-                <input type="date" placeholder="Data de Nascimento">
-                <input type="email" placeholder="E-mail">
-                <input type="email" placeholder="Confirme o e=mail">
-                <input type="password" placeholder="Senha">
-                <input type="password" placeholder="Cofirme a senha">
-            </form> 
+    <div class="container">
+        <header>
+            <img src="./img/logo.png" alt="logo-cadastro">
+            <h1>Cadastro de Usuarios</h1>
+        </header>
+        <form>
+            <label for="input-userName">
+                <input type="text" id="input-userName" name="Name" required placeholder="Nome">
+            </label>
+            <label for="input-lastName">
+                <input type="text" id="input-lastName" name="Sobrenome" required placeholder="Sobrenome">
+            </label>
+            <label for="input-birthDate">
+                <input type="date" id="input-birthDate" name="DataNascimento" required placeholder="Data de Nascimento">
+            </label>    
+            <label for="input-email">
+                <input type="email" id="input-email" name="E-mail" required placeholder="E-mail">
+            </label>
+            <label for="input-confirmEmail">
+                <input type="email" id="input-confirmEmail" name="Confirm-Email" required placeholder="Confirme o e=mail">
+            </label>
+            <label for="input-password">
+                <input type="password" id="input-password" name="Senha" required placeholder="Senha">
+            </label>
+            <label for="input-confirmPassword">
+                <input type="password" id="input-confirmPassword" name="Confirm-senha" required placeholder="Cofirme a senha">
+            </label>
             <div class="btn-cadastrar">
-                <button class="btn-cad">Cadastrar Usuario</button>
-                <button class="btn-clear">Limpar</button>
+                <button class="btn-cad" type="submit">Cadastrar Usuario</button>
+                <button class="btn-clear" type="reset">Limpar</button>
             </div>
         </form>
     </div>
